@@ -38,7 +38,7 @@
 				</span>
 			</div>
 			<p class="result">
-				<span class="msg">아이디를 확인해 주세요.</span>
+				<span class="msg"><strong>아이디를 확인해 주세요.</strong></span>
 			</p>
 
 			<div class="wrap-input100 validate-input" data-validate = "비밀번호는 필수항목입니다.">
@@ -67,8 +67,8 @@
 			<div class="wrap-input100">
 				<input type="radio" name="type" value="customer">개인
 				<input type="radio" name="type" value="host">사업자
-			</div>
-			<button type="button" class="idCheck">아이디 중복확인</button>
+				<input type="button" class="idCheck btn btn-light btn-sm" value="아이디 중복확인" />
+			</div>			
 
 			<div class="container-contact100-form-btn">
 				<input class="contact100-form-btn" id="submit" type="submit" value="가입하기" style="width:170px" disabled="disabled" />
@@ -121,7 +121,7 @@ $(".idCheck").click(function() {
 	});
 });
 $("#id").keyup(function() {
-	$(".result .msg").text("중복확인을 해주세요.");
+	$(".result .msg").text("아이디를 확인해 주세요.");
 	$(".result .msg").attr("style", "color:#000");
 	$("#submit").attr("disabled", "disabled");
 
